@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"dma_multi\startup_stm32f103xb.o"
+"dma_multi\lcd.o"
+"dma_multi\main.o"
+"dma_multi\stm32f1xx_it.o"
+"dma_multi\stm32f1xx_hal_msp.o"
+"dma_multi\stm32f1xx_hal_gpio_ex.o"
+"dma_multi\stm32f1xx_hal_adc.o"
+"dma_multi\stm32f1xx_hal_adc_ex.o"
+"dma_multi\stm32f1xx_hal.o"
+"dma_multi\stm32f1xx_hal_rcc.o"
+"dma_multi\stm32f1xx_hal_rcc_ex.o"
+"dma_multi\stm32f1xx_hal_gpio.o"
+"dma_multi\stm32f1xx_hal_dma.o"
+"dma_multi\stm32f1xx_hal_cortex.o"
+"dma_multi\stm32f1xx_hal_pwr.o"
+"dma_multi\stm32f1xx_hal_flash.o"
+"dma_multi\stm32f1xx_hal_flash_ex.o"
+"dma_multi\stm32f1xx_hal_exti.o"
+"dma_multi\stm32f1xx_hal_tim.o"
+"dma_multi\stm32f1xx_hal_tim_ex.o"
+"dma_multi\system_stm32f1xx.o"
+--strict --scatter "dma_multi\dma_multi.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dma_multi.map" -o dma_multi\dma_multi.axf
