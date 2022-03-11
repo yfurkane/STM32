@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"flash_memory\startup_stm32f103xb.o"
+"flash_memory\main.o"
+"flash_memory\stm32f1xx_it.o"
+"flash_memory\stm32f1xx_hal_msp.o"
+"flash_memory\stm32f1xx_hal_gpio_ex.o"
+"flash_memory\stm32f1xx_hal_tim.o"
+"flash_memory\stm32f1xx_hal_tim_ex.o"
+"flash_memory\stm32f1xx_hal.o"
+"flash_memory\stm32f1xx_hal_rcc.o"
+"flash_memory\stm32f1xx_hal_rcc_ex.o"
+"flash_memory\stm32f1xx_hal_gpio.o"
+"flash_memory\stm32f1xx_hal_dma.o"
+"flash_memory\stm32f1xx_hal_cortex.o"
+"flash_memory\stm32f1xx_hal_pwr.o"
+"flash_memory\stm32f1xx_hal_flash.o"
+"flash_memory\stm32f1xx_hal_flash_ex.o"
+"flash_memory\stm32f1xx_hal_exti.o"
+"flash_memory\system_stm32f1xx.o"
+--strict --scatter "Flash_Memory\Flash_Memory.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Flash_Memory.map" -o Flash_Memory\Flash_Memory.axf
