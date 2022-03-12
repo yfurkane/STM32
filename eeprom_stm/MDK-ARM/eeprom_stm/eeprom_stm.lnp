@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"eeprom_stm\startup_stm32f103xb.o"
+"eeprom_stm\eeprom.o"
+"eeprom_stm\main.o"
+"eeprom_stm\stm32f1xx_it.o"
+"eeprom_stm\stm32f1xx_hal_msp.o"
+"eeprom_stm\stm32f1xx_hal_gpio_ex.o"
+"eeprom_stm\stm32f1xx_hal_i2c.o"
+"eeprom_stm\stm32f1xx_hal.o"
+"eeprom_stm\stm32f1xx_hal_rcc.o"
+"eeprom_stm\stm32f1xx_hal_rcc_ex.o"
+"eeprom_stm\stm32f1xx_hal_gpio.o"
+"eeprom_stm\stm32f1xx_hal_dma.o"
+"eeprom_stm\stm32f1xx_hal_cortex.o"
+"eeprom_stm\stm32f1xx_hal_pwr.o"
+"eeprom_stm\stm32f1xx_hal_flash.o"
+"eeprom_stm\stm32f1xx_hal_flash_ex.o"
+"eeprom_stm\stm32f1xx_hal_exti.o"
+"eeprom_stm\stm32f1xx_hal_tim.o"
+"eeprom_stm\stm32f1xx_hal_tim_ex.o"
+"eeprom_stm\system_stm32f1xx.o"
+--strict --scatter "eeprom_stm\eeprom_stm.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "eeprom_stm.map" -o eeprom_stm\eeprom_stm.axf
